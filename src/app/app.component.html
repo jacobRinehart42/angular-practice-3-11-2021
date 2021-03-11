@@ -1,0 +1,11 @@
+<button (click)="OnClick()">
+  Toggle Paragraph
+</button>
+<p *ngIf="showParagraph">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto doloribus, inventore quo praesentium deserunt
+  adipisci officia eius aliquid similique, repellat odit dolorem dicta error veniam, aut quisquam quaerat eligendi.
+</p>
+<p *ngFor="let string of strings; let i = index" [ngStyle]="{background : getBColor(i) }"
+  [ngClass]="whiteText(i) ? '{color:white}' : '{color:black}' ">
+  {{string}} Hello World
+</p>
