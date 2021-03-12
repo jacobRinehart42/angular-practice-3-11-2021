@@ -22,10 +22,4 @@ export class AppComponent {
     return "transparent";
   }
 
-  whiteText(i) {
-    if (i >= 4) {
-      return true;
-    }
-    return false;
-  }
 }

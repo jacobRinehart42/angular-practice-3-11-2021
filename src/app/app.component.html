@@ -9,10 +9,7 @@
   eligendi.
 </p>
 
-<p
-  *ngFor="let item of log; let i = index"
-  [ngStyle]="{background : getBColor(i) }"
-  [ngClass]="whiteText(i) ? 'whiteText' : '' "
->
+<p *ngFor="let item of log; let i = index" [ngStyle]="{background : getBColor(i) }"
+  [ngClass]="i >= 4 ? 'whiteText' : '' ">
   {{item}} Hello World
 </p>
