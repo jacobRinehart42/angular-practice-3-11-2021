@@ -8,7 +8,7 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   name = "Angular " + VERSION.major;
   showParagraph: boolean = false;
-  log = [];
+  log : number[] = [];
 
   OnClick(): void {
     this.showParagraph = !this.showParagraph;
