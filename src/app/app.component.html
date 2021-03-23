@@ -1,3 +1,5 @@
+<h4>Practice for Lecture 5</h4>
+
 <button (click)="OnClick()">
   Toggle Paragraph
 </button>
@@ -9,7 +11,16 @@
   eligendi.
 </p>
 
-<p *ngFor="let item of log; let i = index" [ngStyle]="{background : getBColor(i) }"
-  [ngClass]="i >= 4 ? 'whiteText' : '' ">
+<p *ngFor="let item of log; let i = index" [ngStyle]="{background : getBColor(item) }"
+  [ngClass]="item > 4 ? 'whiteText' : '' ">
   {{item}} Hello World
 </p>
+
+
+
+<h4>Practice for Lecture 3</h4>
+
+<input [(ngModel)] = "username">
+<p> {{username}} </p>
+
+<button (click) = "onClickB()" [disabled] = "username == ''" >Click Me</button>

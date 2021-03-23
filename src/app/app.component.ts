@@ -8,7 +8,8 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   name = "Angular " + VERSION.major;
   showParagraph: boolean = false;
-  log : number[] = [];
+  log: number[] = [];
+  username: string = "";
 
   OnClick(): void {
     this.showParagraph = !this.showParagraph;
@@ -16,10 +17,13 @@ export class AppComponent {
   }
 
   getBColor(i) {
-    if (i >= 4) {
+    if (i > 4) {
       return "green";
     }
     return "transparent";
   }
 
+  onClickB() {
+    this.username = "HelloWorld";
+  }
 }
